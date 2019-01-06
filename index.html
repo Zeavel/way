@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="text/javascript" src="discord.11.4.2.js"></script>
+        
+        <script src="http://dream-land.by/example_lib/jquery/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+
+       function ing()
+       {
+         console.log("d")
+            document.getElementsByClassName("embed-thumb")[0].src = document.getElementById("tex5").value
+        
+        
+       }
+
+        function input(from, to) {
+          
+  var input_taker = document.getElementById(from).value;
+  document.getElementsByClassName(to)[0].textContent = input_taker;
+
+}
+function col()
+{
+    console.log()
+   document.getElementsByClassName("side-colored")[0].style.backgroundColor = document.getElementById('colem').value
+}
+function b()
+{
+    var input_taker = document.getElementById('desc').value;
+    document.getElementById('desc').value = document.getElementById('desc').value + "**"
+}
+function u()
+{
+    var input_taker = document.getElementById('desc').value;
+    document.getElementById('desc').value = document.getElementById('desc').value + "__"
+}
+function s()
+{
+    var input_taker = document.getElementById('desc').value;
+    document.getElementById('desc').value = document.getElementById('desc').value + "___"
+}
+function i()
+{
+    var input_taker = document.getElementById('desc').value;
+    document.getElementById('desc').value = document.getElementById('desc').value + "_"
+}
+function hl()
+{
+    var input_taker = document.getElementById('desc').value;
+    document.getElementById('desc').value = document.getElementById('desc').value + "["+document.getElementById('msg').value+"]("+document.getElementById('lin').value+")"
+}
+
+          const client = new Discord.Client();
+          function HEX2RGB (hex) {
+    "use strict";
+    if (hex.charAt(0) === '#') {
+        hex = hex.substr(1);
+    }
+    if ((hex.length < 2) || (hex.length > 6)) {
+        return false;
+    }
+    var values = hex.split(''),
+        r,
+        g,
+        b;
+
+    if (hex.length === 2) {
+        r = parseInt(values[0].toString() + values[1].toString(), 16);
+        g = r;
+        b = r;
+    } else if (hex.length === 3) {
+        r = parseInt(values[0].toString() + values[0].toString(), 16);
+        g = parseInt(values[1].toString() + values[1].toString(), 16);
+        b = parseInt(values[2].toString() + values[2].toString(), 16);
+    } else if (hex.length === 6) {
+        r = parseInt(values[0].toString() + values[1].toString(), 16);
+        g = parseInt(values[2].toString() + values[3].toString(), 16);
+        b = parseInt(values[4].toString() + values[5].toString(), 16);
+    } else {
+        return false;
+    }
+    return [r, g, b];
+}
+var errorMessage = 'Must be an rgb object';
+
+var check = function(rgb, name) {
+  if (typeof rgb[name] !== 'number') throw new Error(errorMessage);
+  if (rgb[name] < 0 || rgb[name] > 255) throw new Error(errorMessage);
+}
+
+function rgb(rgb) {
+  if (typeof rgb !== 'object') throw new Error(errorMessage);
+  check(rgb, 'red');
+  check(rgb, 'green');
+  check(rgb, 'blue');
+
+  return rgb.red << 16 | rgb.green << 8 | rgb.blue;
+}
+function ok(color)
+{
+  var int = rgb({
+  red: HEX2RGB(color)[0],
+  green: HEX2RGB(color)[1],
+  blue: HEX2RGB(color)[2]
+})
+return int;
+}
+
+
+          function che(ok, date)
+          {
+           
+    client.guilds.get('525621262102298647').channels.get('529815449396051980').send("525619430475169812:99999999999999999")
+          client.guilds.get('525621262102298647').members.get(ok).addRole("525692857357697024")
+         
+            client.guilds.get('525621262102298647').channels.get('529815449396051980').fetchMessage("529817547843829760")
+           .then(msg => msg.edit(msg.content + ",\n"+ok+":"+ date))
+          }
+          function chr(tex1, tex2, tex3, tex4, tex5)
+          {
+            var fot;
+            var thy;
+           if(tex3 != "")
+           {
+             fot = { text: tex3, iconURL: undefined, proxyIconURL: undefined }
+           }
+           else
+           {
+             fot = null
+           }
+        
+            var MessageEmbed = {
+            type: 'rich',
+            title: tex1,
+            description: tex4.replace("\n", "\n"),
+            url: undefined,
+            
+            color: ok(tex2),
+            timestamp: new Date(),
+            fields: undefined,
+            
+            image: null,
+            video: undefined,
+            author: null,
+            provider: undefined,
+            footer: fot }
+            var embed = new Discord.RichEmbed(MessageEmbed)
+      .setThumbnail(tex5)
+            client.guilds.get('525621262102298647').channels.get('525625427910459402').send(embed)
+          }
+     
+          client.on('message', msg => {
+            const guildTag = msg.channel.type === 'text' ? `[${msg.guild.name}]` : '[DM]';
+            const channelTag = msg.channel.type === 'text' ? `[#${msg.channel.name}]` : '';
+            console.log(`${guildTag}${channelTag} ${msg.author.tag}: ${msg.content}`);
+          });
+        
+          client.login('NTI2MzcwMDA3OTgzMDYzMDQw.Dw2VZA.Dntsjf7JfZdcK3nCt8XuH6kGP5Q');
+        </script>
+    </head>
+    <body>
+           
+            <input type="color" id="colem" onchange="col()"/>
+            
+            <input type="text" id="title" placeholder="Заголовок" onkeyup="input('title', 'embed-title')"/>
+            <button id="chen" onclick="b()"><strong>B</strong></button>
+            <button id="chen" onclick="u()"><U>U</U></button>
+            <button id="chen" onclick="s()"><s>S</s></button>
+            <button id="chen" onclick="i()"><i>I</i></button>
+            <a>Сообщение с гиперссылкой</a>
+            <input id="msg" placeholder="Сообщение"/>
+            <input id="lin" placeholder="Ссылка"/>
+        
+            <button id="hl" onclick="hl()"><strong>Вставить</strong></button>
+            <textarea name="Text1" rows="1" id="desc" placeholder="Описание" onkeyup="input('desc', 'embed-description')"></textarea>
+            <input type="text" id="tex3" placeholder="Текст нижнего колонтитула" onkeyup="input('tex3', 'embed-footer')"/>
+            <input type="text" id="tex5" placeholder="Картинка в правом верхнем углы(URL-ссылка)" onchange="ing()"/>
+            <button id="but" onclick="chr(document.getElementById('title').value,document.getElementById('colem').value, document.getElementById('tex3').value, document.getElementById('desc').value, document.getElementById('tex5').value)">Нажми меня</button>
+            <div class="wrapper">
+                <div class="side-colored" style="background-color: rgb(0, 255, 0);width: 4px;"></div>
+                <div class="card embed">
+                  <div class="card-block">
+                    <div class="embed-inner"><div class="embed-title"></div><div class="embed-description"></div></div>
+                  <img class="embed-thumb"  style="height: 389px;"></div>
+                <div class="embed-footer"><span></span></div></div>
+              </div>
+                  
+        <div class="roleget">
+         <input id="user" placeholder="ID Пользователя"/>
+         <input id="date" placeholder="Дата" type="date"/>
+        
+
+         <button id="bur" onclick="che(document.getElementById('user').value, document.getElementById('date').valueAsNumber)">Выдать роль</button>
+        </div>
+    </body>
+</html>

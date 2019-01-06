@@ -1,0 +1,344 @@
+body{
+    background-color: #36393e;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+ 
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+  
+}
+body { white-space: pre-line; }
+a{
+    color: white;
+}
+#chen:active {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+  }
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 520px;
+}
+div {
+    display: block;
+}
+.side-colored {
+    width: 4px;
+    border-radius: 3px 0 0 3px;
+    background: #4f545c;
+}
+.embed {
+    border-radius: 0 3px 3px 0;
+    background: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+
+    display: flex;
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+.card {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+
+
+    flex-direction: column;
+ 
+    border: 1px solid rgba(0,0,0,.125);
+
+}
+.embed .card-block {
+    padding: 0;
+    max-width: 480.438;
+    display: flex;
+    margin-bottom: 10px;
+}
+.card-block {
+    -webkit-box-flex: 1;
+
+    flex: 1 1 auto;
+
+}
+*, ::after, ::before {
+
+    box-sizing: inherit;
+}
+.preview {
+    background: #36393e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.embed .embed-inner .embed-title {
+    color: #fff;
+}
+.embed img.embed-thumb {
+    max-height: 80px;
+    max-width: 80px;
+    border-radius: 3px;
+
+    flex-shrink: 0;
+    width: auto;
+
+    object-fit: contain;
+    margin-left: 20px;
+}
+.embed .embed-inner .embed-description {
+    word-wrap: break-word;
+    max-width: 385.141;
+}
+#title
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    background-color: #272b2b;
+    width: 500px;
+    height: 40px;
+    
+    
+    padding-left: 15px;
+
+}
+#msg
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    background-color: #272b2b;
+    width: 500px;
+    height: 40px;
+    
+    
+    padding-left: 15px;
+
+}
+#lin
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 20px 2px 0 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    background-color: #272b2b;
+    width: 500px;
+    height: 40px;
+    
+    
+    padding-left: 15px;
+
+}
+#hl
+{
+ 
+  
+    width: 100px;
+    height: 30px;
+    background-color: #7289da;
+    margin: 0 2px 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
+#desc
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 10px 2px 0 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    background-color: #272b2b;
+    width: 500px;
+    height: 40px;
+    text-align: unset;
+    
+    padding-left: 15px;
+
+}
+#tex3
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 20px 2px 0 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    background-color: #272b2b;
+    width: 500px;
+    height: 40px;
+    word-wrap: break-word;
+    
+    padding-left: 15px;
+
+}
+#tex5
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 20px 2px 0 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    background-color: #272b2b;
+    width: 500px;
+    height: 40px;
+    
+    
+    padding-left: 15px;
+
+}
+#but
+{
+ 
+  
+    width: 100px;
+    height: 30px;
+    background-color: #7289da;
+    margin: 25px 2px 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
+#chen
+{
+ 
+    
+  
+    width: 7px;
+    height: 14px;
+    background-color: #7289da;
+    margin: 0 2px 0px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
+#colem
+{
+ 
+  
+    width: 100px;
+    height: 15px;
+    background-color: #7289da;
+    margin: 0 2px 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
+#list
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 500px;
+    height: 50px;
+    margin-top: 10%;
+    
+    padding-left: 15px;
+
+}
+.roleget {
+    width: 500px;
+    height: 200px;
+    position: relative;
+  
+    top: 0px;
+    margin-left: 0px;
+
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background: rgba(46, 48, 54, 0.3);
+    border-color: rgba(46, 48, 54, 0.6);
+
+    display: flex;
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+.roleget #user
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 500px;
+    height: 50px;
+    margin-top: 10%;
+    
+    padding-left: 15px;
+
+}
+.roleget #date
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: gainsboro;
+    margin: 2px 2px 2px 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 3px 3px 0;
+    background-color: #272b2b;
+    width: 500px;
+    height: 50px;
+    margin-top: 10%;
+    
+    padding-left: 15px;
+
+}
+.roleget #bur
+{
+    top: 460px;
+    margin-left: 0px;
+  
+
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    top: 140px;
+position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: #7289da;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
